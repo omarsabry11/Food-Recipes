@@ -1,0 +1,82 @@
+.button-style {
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem;
+}
+
+.meal-details 
+{
+  .meal__title {
+    font-weight: 600;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  .meal__body {
+    display: grid;
+    
+
+    .meal__image {
+      width: 380px;
+      img {
+        width: 100%;
+        border-radius: 2rem;
+      }
+    }
+    .meal__buttons {
+      display: flex;
+      justify-content: center;
+      margin: 1.5rem 0;
+      gap: 1rem;
+      color: white;
+      padding: 1rem 2rem;
+      .youtube {
+        background-color: #dc2626;
+        @extend .button-style;
+      }
+      .source {
+        background-color: #21ba75;
+        @extend .button-style;
+      }
+    }
+  }
+  .ingredients
+  {
+    background-color: white;
+    padding: 1.25rem;
+    border-radius: 2rem;
+    .ingredients__title
+    {
+      font-size: 1.5rem;
+      font-weight: 600;
+      border-bottom: 4px solid #E5E7EB;
+      padding-bottom: 0.5rem;
+
+    }
+    .ingredients__details
+    {
+      padding-top: 0.8rem;
+    }
+    .ingredients__item
+    {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 0;
+      border-bottom: 1px solid #E5E7EB;
+      &:nth-last-child(1)
+      {
+        border-bottom: 0;
+      }
+      .ingredient
+      {
+
+
+      }
+      .measure
+      {
+
+      }
+
+    }
+
+    
+  }
+}

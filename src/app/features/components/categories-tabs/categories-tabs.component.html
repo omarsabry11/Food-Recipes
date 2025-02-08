@@ -1,0 +1,19 @@
+<section class="tabs-container">
+  <button
+    [class]="selectedCategory == '' ? 'active-tab' : ''"
+    (click)="setSelectedCategory('')"
+    class="tab"
+  >
+    All
+  </button>
+
+  @for (category of categories; track $index) {
+  <button
+    (click)="setSelectedCategory(category.strCategory)"
+    [class.active-tab]="selectedCategory == category.strCategory"
+    class="tab"
+  >
+    {{ category.strCategory }}
+  </button>
+  }
+</section>
