@@ -15,11 +15,14 @@ export const routes: Routes = [
         (c) => c.MealDetailsComponent
       ),
     title: 'Meal Details',
+  
+
   },
   {
     path: 'meals/:category',
     component: MealsComponent,
     title: 'Meals',
+
   },
 
   {
